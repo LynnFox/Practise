@@ -1,0 +1,7 @@
+//投机取巧
+class Solution {
+    public String replaceSpace(String s) {
+        String string = s.replaceAll(" ", "%20");
+        return string;
+    }
+}
