@@ -1,4 +1,4 @@
-//方案一：暴力
+//方案一：暴力+O(n)+O(1)
 class Solution {
     public int minArray(int[] numbers) {
         if(numbers.length == 1)
@@ -12,7 +12,7 @@ class Solution {
     }
 }
 
-//方案二：二分
+//方案二：二分+O(logn)+O(1)
 class Solution {
     public int minArray(int[] numbers) {
         int len = numbers.length;
