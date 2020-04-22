@@ -25,3 +25,22 @@ class Solution {
 }
 
 //方案二：栈
+class Solution {
+    public int[] reversePrint(ListNode head) {
+        Stack<Integer> s = new Stack<>();
+
+        while(head!=null){
+            s.push(head.val);
+            head = head.next;
+        }
+        
+        int len = s.size();
+        int[] res = new int[len];
+        
+        for (int i = 0; i < len; i++) {
+            res[i] = s.pop();
+        }
+
+        return res;
+    }
+}
