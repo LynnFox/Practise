@@ -1,4 +1,3 @@
-'''
 class Solution {
     public int[] printNumbers(int n) {
         int  time = 1;
@@ -13,4 +12,4 @@ class Solution {
         return res;
     }
 }
-'''
+
