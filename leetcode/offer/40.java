@@ -18,6 +18,8 @@ class Solution {
     }
 }
 //方案二：优先队列实现大顶堆
+//只有k个元素的大顶堆！！！
+//比堆顶小进堆，堆元素超过k个删堆顶
 class Solution {
     public int[] getLeastNumbers(int[] arr, int k) {
         
@@ -30,12 +32,14 @@ class Solution {
 
 
         for (int e : arr) {
-            // 当前元素小于堆顶元素入堆
-            if (maxheap.isEmpty() || maxheap.size() <= k || e < maxheap.peek()) {
+            
+            //堆不满入堆
+            //比堆顶元素小入堆
+            if (maxheap.size() < k || e < maxheap.peek()) {
                 maxheap.offer(e);
             }
 
-            // 删除堆顶最大元素
+            // 删除堆顶最大元素，保证堆中元素个数不超过k
             if (maxheap.size() > k) {
                 maxheap.poll(); 
             }
