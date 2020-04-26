@@ -29,6 +29,7 @@ class Solution {
         return nums[nums.length / 2];
     }
 }
+
 //方案三：摩尔计数法
 //O(n)+O(1)
 class Solution {
