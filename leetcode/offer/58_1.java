@@ -44,7 +44,6 @@ class Solution {
             //j+1:开始的位置
             //i-j:子串长度
             res.append(st, j + 1, i - j).append(" ");
-            i = j;
         }
 
         //如果字符串只包含' ',返回""
