@@ -1,3 +1,4 @@
+//借用HashMap统计出现次数+O(n)+O(n)
 class Solution {
     public char firstUniqChar(String s) {
         if (s == null || s.length() == 0)
