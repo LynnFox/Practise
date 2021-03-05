@@ -1,1 +1,3 @@
-offer文件夹里是leetcode上剑指Offer的题
+leetcode--offer--剑指Offer
+leetcode--simple--简单题
+leetcode--middle--中等题
